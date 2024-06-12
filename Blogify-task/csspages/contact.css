@@ -1,0 +1,84 @@
+:root{
+    --main-color:#246076;
+    --black:#040404;
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+    --font: #706f70;
+    --border:1px solid rgba(0,0,0,0.2);
+}
+body{
+    position: relative;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-page{
+    margin-top:10rem;
+    width: 45rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0 0.5rem 1rem rgb(192, 220, 230);
+    border-radius: 10px; 
+}
+.contact-page .contact-img{
+    background-image: url(/Blogify-task/img/contact2.webp);
+    width: 20rem;
+    height: 20rem;
+  border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-page .contact-form{
+    border-radius: 10px;
+    background:  rgba(252, 255, 255, 0.13);
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.contact-page .contact-form h1{
+    color: var(--main-color);
+}
+.contact-form form input{
+    padding-left: 15px;
+    background-color:rgba(119, 118, 118, 0.1) ;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: var(--main-color);
+}.contact-form form input:hover{
+    cursor: pointer;
+}.contact-form h1{
+    color: #fff;
+}.contact-form form textarea{
+background-color:rgba(163, 163, 163, 0.1) ;
+color: var(--main-color);
+border-radius: 10px;
+border: none;
+}
+@media screen and (max-width:450.99px){
+    .contact-page{
+    flex-direction: column;   
+    }
+}
+@media (min-width:451px) and (max-width:767.99px){
+    .contact-page{
+        flex-direction: column; 
+        width: 30rem;
+        height: 40rem;  
+        }.contact-page .contact-img{
+        width: 25rem;
+
+        }
+}

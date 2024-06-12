@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Blogify-task/csspages/style.css">
+    <link rel="stylesheet" href="/Blogify-task/csspages/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Blogify</title>
+  </head>
+  <body>
+    <header class="header">
+        <a href="#" class="logo">Blogify</a>
+        <nav class="navbar" id="navbar">
+            <a href="#home">Home</a>
+            <a href="#blog">Blog</a>
+            <a href="#popular">Popular</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <form action="post" class="search-form">
+          <input type="search"  name="" id="search-box" placeholder="Search blog from blogify" />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <div class="regist">
+          <button class="login">Login</button>
+          <button class="sign">Sign Up</button>
+        </div>
+        <div class="icons">
+          <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+        </header>
+        <section class="home"  id="home">
+            <div class="home-text">
+              <h3>
+                Uniqlos Digital Innovation , The Future of Retail and E Commerce
+              </h3>
+              <p>
+                Uniqlo examplifies digital innovation's shift towards immersive ,
+                personalized shoopping.
+              </p>
+            </div>
+            <div class="img-home">
+              <button>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="blog" id="blog">
+            <!-- header blog -->
+            <div class="headerBlog">
+            <button class="btnfilter"><i class="fas fa-sliders-h"></i> Filter</button>
+            <div class="text">showing 1-12 of 1000+blog</div>
+                <div class="sorticon">
+                <div>
+                    <span> Sort by:</span>
+                    <select name="" id="">
+                    <option value="default">Default</option>
+                    </select>
+                </div>
+                <button class="btnsort" id="colmbtn"><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i></button>
+                <button class="btnsort" id="gridbtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#126583"><path d="M120-520v-320h320v320H120Zm0 400v-320h320v320H120Zm400-400v-320h320v320H520Zm0 400v-320h320v320H520ZM200-600h160v-160H200v160Zm400 0h160v-160H600v160Zm0 400h160v-160H600v160Zm-400 0h160v-160H200v160Zm400-400Zm0 240Zm-240 0Zm0-240Z"/></svg></button>
+                </div>
+            </div> 
+            <!-- content of blog  -->
+            <div class="blogContent">
+                <!-- post -->
+                <div class="post" id="post">
+                </div>
+                <!-- sort of post  -->
+                <div class="content-post">
+                    <!-- categories   -->
+                    <div class="box">
+                        <h3 class="tittle">Categories</h3>
+                        <div class="categories">
+                            <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368" top="20px"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>Technology </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> Design </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> Business </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> nature </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> news </a>
+                            <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>Technology </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> Design </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> Business </a>
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg> nature </a>
+                        </div>
+                    </div>
+                    <!-- popular post  -->
+                    <h3 class="tittle">Popular Post</h3>
+                    <div class="popular" id="popular"> </div>
+                    <!-- tags post  -->
+                    <div class="box">
+                        <h3 class="tittle">Tags</h3>
+                        <div class="tags">
+                            <span>Technology</span>
+                            <span>health</span>
+                            <span>sport</span>
+                            <span>food</span>
+                            <span>design</span>
+                            <span>bussiness</span>
+                            <span>nature</span>
+                            <span>news</span>
+                        </div>
+                    </div>
+                    <button class="explore">
+                        <a href="post.html" target="_blank">Explore more</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="25px"  viewBox="0 -960 960 960" width="30px" fill="#fff">
+                            <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="tittle">
+                <h2> Subscribe To Our NewsLetter</h2>
+            </div>
+            <div class="Subscribe" id="contact">
+                <hr>
+                <p>Subscribe us here with your email to get updates of all our next blogs , we wil
+                    inform you in your email.
+                </p>
+                <button>
+                    <a href="/Blogify-task/htmlpage/contact.html">Subscribe</a>
+                </button>
+            </div>
+        </section>
+        <footer>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i>Facebook</a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>instgram </a>
+                <a href="https://x.com/?mx=2" target="_blank"> <i class="fa-brands fa-x-twitter"></i>twitter</a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i>Pintrest</a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                <a href="https://www.tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+            </div>
+            <div class="back">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#00"><path d="M480-528 296-344l-56-56 240-240 240 240-56 56-184-184Z"/></svg>
+                <a href="#home">back to top</a>
+            </div>
+        </footer>
+        <script src="/Blogify-task/jspages/home.js"></script>
+        <!-- <script src="/Blogify-task/jspages/search.js"></script> -->
+        <script src="/Blogify-task/jspages/navbar.js"></script>
+    </body>
+</html>

@@ -111,7 +111,6 @@ to {
    text-decoration: underline;
 }
 .headerBlog{
-   background-color: yellowgreen;
    display: inline-flex;
    justify-content: space-between;
    margin-bottom: 2rem;
@@ -357,7 +356,6 @@ width: 30rem;
    .home{
       padding-top: 15rem;
       width: 100%;
-      background-color: yellowgreen;
       margin-left: 30%;
    }
    .home  .home-text{

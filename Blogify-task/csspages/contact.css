@@ -69,8 +69,13 @@ border: none;
 }
 @media screen and (max-width:450.99px){
     .contact-page{
-    flex-direction: column;   
-    }
+        /* margin-left: 1.5rem; */
+        flex-direction: column; 
+        width: 20rem;
+        height: 40rem;    
+    }}.contact-page .contact-img{
+        width: 20rem;
+
 }
 @media (min-width:451px) and (max-width:767.99px){
     .contact-page{

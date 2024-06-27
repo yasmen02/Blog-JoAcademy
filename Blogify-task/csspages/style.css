@@ -1,5 +1,4 @@
 /* home section */
-
 @keyframes slidein {
 from {
    translate: -100vh 0;
@@ -11,10 +10,22 @@ to {
    scale: 100% 1;
 }
 }
-
+body{
+   animation-duration: 1s;
+   animation-name: slidein;
+}
+.home-section{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+}
 .home{
-   min-height: 80vh;
-   padding-top: 13rem;
+   position: relative;
+   top: 10rem;
+   border-radius: 0.5rem;
+   box-shadow: var(--box-shadow); 
+   width: 80rem;
+   height: 70vh;
    display: flex;
    justify-content: center;
    flex-direction: column;
@@ -22,8 +33,6 @@ to {
 }
 .home  .home-text{
    text-align:left;
-   border-radius: 0.5rem;
-   box-shadow: var(--box-shadow);
    padding: 3rem;
    width: 70rem;
 }.home .home-text h3{
@@ -42,7 +51,7 @@ to {
    background-image: url(/Blogify-task/img/home.jpg);
    background-repeat: no-repeat;
    background-size: cover;
-   width: 70rem;
+   width: 65rem;
    height: 20rem;
    border-radius: 1rem;
    position: relative;
@@ -59,7 +68,8 @@ to {
    width: 50px;
    height: 50px;
    background: var(--main-color);
-}.post{
+}
+.post{
    display: grid;
    grid-template-columns: repeat(2,1fr);
    gap: 10px;
@@ -70,7 +80,7 @@ to {
    margin-top: 10px;
    text-align: left;
    border-radius: 10px;
-   width: 20rem;
+   width: 25rem;
    height: 30rem;
    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 }.card-content .links a{
@@ -96,12 +106,12 @@ to {
 }
 .new-card img{
    border-radius: 10px;
-   width: 20rem;
+   width: 25rem;
    height: 10rem;
 }
 .card-content h2{
    color: var(--main-color);
-   font-size: 1rem;
+   font-size: 1.2rem;
 }
 .card-content p{
    font-size: 0.8rem;
@@ -114,12 +124,9 @@ to {
    display: inline-flex;
    justify-content: space-between;
    margin-bottom: 2rem;
-   width:30rem;
+   width:70rem;
 }
 .headerBlog .text{
-   margin-right: 40px;
-   margin-left: 40px;
-   margin-top: 5px;
    color: var(--font);
 }
 .headerBlog .btnfilter{
@@ -157,7 +164,7 @@ to {
 .blog{
    align-items: center;
    position: relative;
-   top: 5rem;
+   top: 15rem;
    display: flex;
    flex-direction: column;
 }.blogContent{
@@ -231,7 +238,7 @@ to {
 .contact{
    background-color:rgb(226, 226, 226);
    min-height: 30vh;
-   margin-top: 13rem;
+   margin-top: 20rem;
    align-items: center;
    text-align: center;
    display: flex;
@@ -313,8 +320,16 @@ footer .back a{
    width: 40rem;
    height: 20rem;
 }
+.home{
+   width: 50rem;
+   top: 15rem;
+}
 .home  .home-text{
    width: 40rem;
+}
+.blog{
+   top: 20rem;
+   margin-bottom: 25rem;
 }
 .popularpost{
 width: 400px;
@@ -325,20 +340,29 @@ height: fit-content;
 }
 .headerBlog{
    width:40rem;
-
 }
 }
 /* tablet  */
 @media (min-width:451px) and (max-width:767.99px) {
 .img-home{ 
    width: 30rem;
-   height: 20rem;
+   height: 15rem;
+}
+.home{
+   width:40rem;
+   top: 15rem;
+}
+.blog{
+   top: 20rem;
 }
 .post{
    grid-template-columns: repeat(1,1fr);
 }
 .home  .home-text{
 width: 30rem;
+}
+.headerBlog{
+   width:30rem;
 }
 .popularpost{
    width: 400px;
@@ -354,29 +378,31 @@ width: 30rem;
 /* small screen */
 @media screen and (max-width:450.99px) {
    .home{
-      padding-top: 15rem;
-      width: 100%;
-      margin-left: 30%;
+      width:25rem;
+      height: 50rem;
+      top:25rem;
+      margin-left: 50%;
+
    }
    .home  .home-text{
       width: 30rem;
       }
 .img-home{ 
-   width: 30rem;
-   height: 20rem;
+   width: 22rem;
+   height: 25rem;
 }
 .headerBlog{
    width:20rem;
-   /* margin-left: 100%; */
 }
 .blog{
+   top: 25rem;
    margin-left: 50%;
 }
 .post{  
    grid-template-columns: repeat(1,1fr);
 }
 .popularpost{
-   width: 300px;
+   width: 400px;
    height: fit-content;
 }
 .blogContent{

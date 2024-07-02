@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/Blogify-task/csspages/navbar.css">
+    <link rel="stylesheet" href="/Blogify-task/csspages/regist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Blogify</title>
+  </head>
+  <body>
+    <header class="header">
+        <a href="#" class="logo">Blogify</a>
+        <nav class="navbar" id="navbar">
+            <a href="/Blogify-task/htmlpage/home.html">Home</a>
+            <a href="/Blogify-task/htmlpage/post.html">Blog</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+        <div class="regist">
+            <button class="login"><a   href="regist.html">Log In</a></button>
+            <button class="sign"><a  href="regist.html">Sign Up</a></button>
+        </div>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+        </div>
+        </header>
+        <section>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label>Login:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Email" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="password">
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">LogIn</button>
+             </div>
+                <div class="info_div">
+                    <p>Don't have an account? <a href="register/reg-form.php">SignUp!</a></p>
+                </div>
+        </form>
+        <form id="login_form" class="form_class" action="login/login-access.php" method="post">
+            <div class="form_div">
+                <label >First Name:</label><br>
+                <input type="text" class="field_class" placeholder="First name"><br>
+                <label >last Name:</label><br>
+                <input type="text" class="field_class" placeholder="last name"><br>
+                <label>Login:</label>
+                <input class="field_class" name="login_txt" type="text" placeholder="Email" autofocus>
+                <label>Password:</label>
+                <input id="pass" class="field_class" name="password_txt" type="password" placeholder="password">
+                <button class="submit_class" type="submit" form="login_form" onclick="return validarLogin()">LogIn</button>
+            </div>
+            <div class="info_div">
+                <p>already have an account? <a href="register/reg-form.php">LogIn!</a></p>
+            </div>
+        </form>
+</section>
+<script src="/Blogify-task/jspages/contact.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="/Blogify-task/jspages/navbar.js"></script>
+
+</body>
+</html>

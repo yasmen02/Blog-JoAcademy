@@ -255,7 +255,7 @@ body{
    flex-direction: column;
 }
 .Subscribe p{
-   font-size: 1.5rem;
+   font-size: 1.2rem;
 }
 .Subscribe button {
    width: 12rem;
@@ -418,7 +418,7 @@ width: 30rem;
    }
    
    .Subscribe p{
-      font-size: 0.9rem;
+      font-size: 1rem;
    }
    .Subscribe button {
       width: 8rem;
@@ -437,5 +437,7 @@ width: 30rem;
    footer .back a{
       font-size: 1rem;
    }
-
+   .Subscribe p{
+      font-size: 1rem;
+   }
 }
